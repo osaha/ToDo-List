@@ -1,0 +1,175 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  /* background: #888; */
+  padding: 10px;
+  width: 380px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 380px;
+  height: 200px;
+  background-image: url("../img/undraw_reading_0re1.svg");
+  background-size: 40%;
+  background-position: right 20px bottom 5px;
+  background-repeat: no-repeat;
+  background-color: rgb(144, 150, 240);
+  position: relative;
+  border-radius: 15px 15px 0 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  left: 15px;
+  font-weight: 200;
+}
+
+.clear {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.clear i {
+  font-size: 30px;
+  color: rgb(250, 246, 248);
+  text-shadow: 1px 1px 3px #555;
+}
+
+.clear i:hover {
+  cursor: pointer;
+  transform: rotate(45deg);
+}
+
+#date {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  color: rgb(11, 49, 82);
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+
+.content {
+  background-color: rgb(242, 240, 248);
+  width: 380px;
+  height: 350px;
+  max-height: 350px;
+  /* must learn */
+  overflow: auto;
+}
+
+.content ul {
+  padding: 0%;
+  margin: 0;
+}
+
+.item {
+  width: 380px;
+  height: 45px;
+  min-height: 45px;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item i.co {
+  position: absolute;
+  font-size: 25px;
+  padding-left: 5px;
+  left: 15px;
+  top: 10px;
+}
+
+.item i.co:hover {
+  cursor: pointer;
+}
+
+.fa-check-circle {
+  color: rgb(44, 139, 68);
+}
+
+.item p.text {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  left: 50px;
+  top: 10px;
+  vertical-align: middle;
+  max-width: 285px;
+}
+
+.lineThrough{
+  text-decoration: line-through;
+  color : #ccc;
+}
+
+.item i.de {
+  position: absolute;
+  font-size: 25px;
+  right: 15px;
+  top: 10px;
+}
+
+.item i.de:hover {
+  cursor: pointer;
+  color: #af0000;
+}
+
+/* ---------- Add Item ---------- */
+.add-to-do {
+  background-color: rgb(242, 240, 248);
+  position: relative;
+  width: 360px;
+  height: 40px;
+  padding: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#input {
+  /* background-color: rgb(238, 223, 223); */
+  height: 35px;
+  width: 310px;
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+#input-btn {
+  position: absolute;
+  left: 330px;
+  bottom: 15px;
+  padding: 0;
+  border: none;
+}
+
+#input-btn i {
+  font-size: 35px;
+  color: #5961d1;
+}
+
+.add-to-do input::placeholder {
+  color: #babde9;
+}
+
+.add-to-do input:-ms-input-placeholder {
+  color: #babde9;
+}
