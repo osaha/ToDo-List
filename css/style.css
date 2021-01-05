@@ -3,17 +3,19 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 .container {
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
+  /* height: 100%; */  height: 100vh;
+  padding: 0px;
+  /* display: flex;
+  flex-direction: column; */
 }
 
 .header {
-  height: 20vh;
-  padding: 10px;
+  height: 30%;
+  padding: 0px;
   background-image: url("../img/undraw_reading_0re1.svg");
   background-size: 40%;
   background-position: right 20px bottom 5px;
@@ -32,7 +34,10 @@ h1 {
   position: absolute;
   top: 30px;
   left: 15px;
-  font-weight: 200;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: white;
+  text-shadow:2px 2px 5px rgb(131, 128, 128);
 }
 
 .clear {
@@ -44,9 +49,9 @@ h1 {
 }
 
 .clear i {
-  font-size: 30px;
+  font-size: 26px;
   color: rgb(250, 246, 248);
-  text-shadow: 1px 1px 3px #555;
+  text-shadow: 2px 2px 5px rgb(131, 128, 128);
 }
 
 .clear i:hover {
@@ -73,8 +78,7 @@ h1 {
   /* max-height: auto; */
   /* must learn */
   overflow: scroll;
-  height: 70vh;
-
+  height: 60%;
 }
 
 .content ul {
@@ -140,15 +144,15 @@ h1 {
 /* ---------- Add Item ---------- */
 
 .form-container {
+  background-color: rgb(242, 240, 248);
   width: 100%;
-  height: 10vh;
+  height: 10%;
   position: sticky;
   bottom: 0;
   left: 0;
 }
 
 form {
-  background-color: rgb(242, 240, 248);
   padding: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
